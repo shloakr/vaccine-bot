@@ -1,4 +1,4 @@
-# vaccine-bot
+# Vaccine Bot
 
 ### Description 
 This model uses a rule based chatbot. A rule based chatbot was used as answers should be highly accurate when used for medical information. The model was created using Deep Neural Netoworks with the Pytourch library. The text was first stemmed and tokenized after which a bag of words was created. The python flask library was used for the website. The website is made using Bootstrap4, jquery, html and css.
