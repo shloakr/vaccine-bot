@@ -4,8 +4,9 @@
 This model uses a rule based chatbot. A rule based chatbot was used as answers should be highly accurate when used for medical information. The model was created using Deep Neural Netoworks with the Pytourch library. The text was first stemmed and tokenized after which a bag of words was created. The python flask library was used for the website. The website is made using Bootstrap4, jquery, html and css.
 
 ### Video Example
-https://drive.google.com/drive/folders/1SI3q2nJddkP1wzYJQVFELfPJC9pHzTe9?usp=sharing
-
+https://drive.google.com/file/d/1BBo2THnYupALUwum8IZz8fU7Knxndh34/view?usp=sharing
+<iframe width="560" height="315" src="https://drive.google.com/file/d/1BBo2THnYupALUwum8IZz8fU7Knxndh34/view" frameborder="0" allowfullscreen></iframe>
+      </iframe>
 ### Landing Page
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/70055735/122668168-7750fb80-d1d4-11eb-8679-fbbb3e48caaf.png">
