@@ -30,7 +30,7 @@ Hosting this projects exccesed Heroku Slug Limit of 500mb
 ## Cite
 If you find the code in the repository useful, please cite it using:
 ```
-@miscsShloakr2021Fake-News-Classifier,
+@miscsShloakr2021vaccine-bot,
   author = {Shloak Rathod},
   title = {An Open Source Implementation of Vaccine Information Bot},
   year = {2021},
