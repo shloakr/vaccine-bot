@@ -1,0 +1,84 @@
+{
+    "intents": [
+        {"tag": "greeting",
+        "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+        "responses": ["Hello, what do you want to know about vaccines?<br>I can <br>1) Guide about Vaccination Dose List <br>2) Side Effects of Vaccine  <br>3) Hospitals for Vaccination  <br>4)Information about vaccine  <br>", "Hi there, I can  <br>1) Guide about Vaccination Dose List,  <br>2) Side Effects of Vaccine,  <br>3) Hospitals for Vaccination,  <br>4)Information about vaccine <br>"]  
+        },
+        {"tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+        "responses":["Bye! get vaccinated and stay safe!", "Get vaccinated and stay safe bye!", "Hope I helped you. Get vaccinated and stay safe!"]
+        },
+        {"tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+        "responses": ["Happy to help! Get vaccinated and stay safe!", "Any time!", "My pleasure but, get vaccinated and stay safe!"]  
+        },
+        {"tag": "noanswer",
+        "patterns": [],
+        "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]  
+        },
+        {"tag": "options",
+        "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+        "responses": ["I can  <br>1) Guide about Vaccination Dose List,  <br>2) Side Effects of Vaccine,  <br>3) Hospitals for Vaccination,  <br>4)Information about vaccine  <br>"]  
+        },
+        {"tag": "Guide",
+        "patterns": ["Guide about Vaccination Dose List", "List of vaccine", "tell me about the vaccines", "Give information about vaccines"],
+        "responses": ["List of vaccine in India <br>1) Covishield   <br>2) Covaxin   <br>3) Sputnik V"]  
+        },
+        {"tag": "Covishield",
+        "patterns": ["Covishield information", "Covishield", "Give information regarding Covishield" ],
+        "responses": ["<br><b>Covishield</b>  <br>The Oxford-AstraZeneca vaccine is being manufactured locally by the Serum Institute of  <br>India, the world's largest vaccine manufacturer. It says it is producing more than 60  <br>million doses a month. The jab is administered in two doses given between four and 12  <br>weeks apart. The jab developed by Pfizer-BioNTech, which is currently being administered  <br>in several countries, must be stored at -70C and can only be moved a limited number of  <br>times - a particular challenge in India, where summer temperatures can reach 50C.  <br>It was found to be 70% effective after the first dose."]  
+        },
+        {"tag": "Covaxin",
+        "patterns": ["Covaxin information", "Covaxin", "Give information regarding Covaxin" ],
+        "responses": ["<br><b>Covaxin</b>  <br>Covaxin is an inactivated vaccine which means that it is made up of killed coronaviruses, \t\tmaking it safe to be injected into the body. Bharat Biotech, a 24-year-old vaccine maker  <br>with a portfolio of 16 vaccines and exports to 123 countries, used a sample of the   <br>coronavirus, isolated by India's National Institute of Virology.  <br>  <br>The vaccine has an efficacy rate of 81%, preliminary data from its phase 3 trial shows.  <br>Bharat Biotech says it has a stockpile of 20 million doses of Covaxin, and is aiming to   <br>make 700 million doses out of its four facilities in two cities by the end of the year."]  
+        },
+        {"tag": "Sputnik V",
+        "patterns": ["Sputnik V information", "Sputnik V", "Give information regarding Sputnik V" ],
+        "responses": ["<br><b>Sputnik V</b>  <br>Russia's Sputnik V has been deemed to be safe, and works in a way similar to the  <br>Oxford-AstraZeneca jab which is being made in India as Covishield. Sputnik V gives around 92% protection against Covid-19, late stage trial results published in The Lancet reveal."]  
+        },
+        {"tag": "Side_Effects_Covishield",
+        "patterns": ["Side Effects of Covishield", "Covishield side effects", "Covishield Side Effects", "Side effects of Covishield"],
+        "responses": ["  <br>Side Effects of Covishield  <br>Some mild symptoms may occur like:  <br>1)   Injection site tenderness   <br>2)   Injection site pain   <br>3)   Headache   <br>4)   Fatigue   <br>5)   Myalgia   <br>6)   Malaise   <br>7)   Pyrexia   <br>8)   Chills   <br>9)   Arthralgia   <br>10) Nausea"]  
+        },
+        {"tag": "Side_Effects_Covaxin",
+        "patterns": ["Side Effects of Covaxin", "Covaxin side effects", "Covaxin Side Effects", "Side effects of Covaxin"],
+        "responses": ["  <br>Side Effects of Covaxin  <br>Some mild symptoms AEFIs may occur like:  <br>1)  Injection site pain   <br>2)  Headache   <br>3)  Fatigue   <br>4)  Fever   <br>5)  Body ache   <br>6)  Abdominal pain   <br>7)  Nausea   <br>8)  Vomiting   <br>9)  Dizziness-giddiness,   <br>10) Tremor   <br>11) Sweating   <br>12) Cold   <br>13) Cough   <br>14) Injection site swelling."]  
+        },
+        {"tag": "Side_Effects_Sputnik V",
+        "patterns": ["Side Effects of Sputnik V", "Sputnik V side effects", "Sputnik V Side Effects", "Side effects of Sputnik V"],
+        "responses": ["  <br>Side Effects of Sputnik V  <br>Some mild symptoms may occur like:  <br>1) Fatigue(70%)   <br>2) Joint Pain(46.4%)   <br>3) Headache(64.7%)   <br>4) Muscle ache(61.5%)   <br>5) Chills(45.4%)   <br>6) Fever(15.6%)"]
+        },
+        {"tag": "General Side effects",
+        "patterns": ["side effects of vaccines", "is vaccination safe?" ],
+        "responses": ["Please ask about specific vaccines from the following:<br>1) Covishield   <br>2) Covaxin   <br>3) Sputnik V"]
+        },
+        {"tag": "Register",
+        "patterns": ["Where should I register for the vaccination?", "how to register", "where can I register", "how can I vaccinate myself?", "Where can I get the vaccine from?"],
+        "responses": ["Register on the Co-WIN Portal and schedule your vaccination appointment. https://www.cowin.gov.in/home"]  
+        },
+        {"tag": "Second Dose",
+            "patterns": ["What is the dose schedule of both the vaccines?", "When should I take the second dose?", "second dose"],
+            "responses": ["The time interval between two doses of the Covishield vaccine should be 12-16 weeks. The second dose of Covaxin can be taken four to six weeks after the first.<br><a href=\"https://www.mohfw.gov.in/covid_vaccination/vaccination/faqs.html \">Source</a>"]  
+        },
+        {"tag": "Choose Vaccine",
+            "patterns": ["Do I have a choice of vaccine I will receive?", "Can I choose my vaccine", "Can I select my vaccine"],
+            "responses": ["The vaccine will be supplied to various parts of India as per availability and distribution plan, beneficiaries load and so at present the option of choice of vaccine is not available."]  
+        },
+        {"tag": "Eligible",
+            "patterns": ["Can I take the vaccine?", "Am I eligible for the vaccine", "Who can take the vaccine", "can children take the vaccine"],
+            "responses": ["From May 1, 2021, all eligible citizens above the age of 18 years can get the COVID-19 vaccine.<br><a href=\"https://www.mohfw.gov.in/covid_vaccination/vaccination/faqs.html \">Source</a>"]  
+        },
+        {"tag": "Eligible",
+            "patterns": ["Can I take the vaccine?", "Am I eligible for the vaccine", "Who can take the vaccine", "can children take the vaccine"],
+            "responses": ["From May 1, 2021, all eligible citizens above the age of 18 years can get the COVID-19 vaccine.<br><a href=\"https://www.mohfw.gov.in/covid_vaccination/vaccination/faqs.html \">Source</a>"]  
+        },
+        {"tag": "Compare",
+            "patterns": ["Which vaccine is better?", "Which is the safest vaccine?", "best vaccine"],
+            "responses": ["There is no head-to-head comparison done between the two vaccines being used in India so one cannot choose one over the other. Both would work fine in preventing the infection as well as prevent a person from going into severe state of the disease. As a long-term effect, it would be preventing death for elderly people or those who have comorbidities. <br><a href=\"https://www.mohfw.gov.in/covid_vaccination/vaccination/faqs.html \">Source</a>"]  
+        },
+        {"tag": "Mask",
+            "patterns": ["Do I need to use the mask/other COVID-19 appropriate precautions after receiving the vaccine?", "Do I need to wear a mask after vaccination?","is mask needed after vaccination?", "mask after vaccine?"],
+            "responses": ["Yes, it is absolutely necessary that everyone who has received the COVID-19 vaccine should continue to follow the COVID-19 appropriate behaviour i.e., mask, do gaj ki doori and hand sanitization to protect themselves and those around from spreading the infection. <br><a href=\"https://www.mohfw.gov.in/covid_vaccination/vaccination/faqs.html \">Source</a>"]  
+        }
+    ]
+}

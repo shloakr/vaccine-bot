@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}"/>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css')}}" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/624fcb6423.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+    <div class="main-chat container" style="margin-top: 50px;" >
+        <div class="margin-top">
+            <div class="row">
+                <div>
+                    <h1>Vaccine Information ChatBot India</h1>
+                    <hr style="color: black;">
+
+                    <form>
+                        <div id="chatbox">
+                            <!-- <div class="col-md-8 ml-auto mr-auto">
+                                <p class="botText chat-message"><span>Hi! I'm Your bot.</span></p>
+                            </div> -->
+                            <p class="botText chat-message"><span>Hi! Ask my about Vaccines in India!</span></p>
+
+                        </div>
+                        <div id="userInput" class="row">
+                            <div class="col-md-10">
+                                <input id="text" type="text" name="msg" placeholder="Ask away!" class="form-control">
+                                <button type="submit" id="send" class="btn btn-warning" style="margin-top: 7px; margin-bottom: 20px; font-family: 'Open Sans', sans-serif;">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <center>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by Shloak Rathod</p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons" >
+                            <li><a class="twitter" href="https://github.com/shloakr"><i class="fa fa-github"></i></a></li>
+                            <li><a class="linkedin" href="https://www.linkedin.com/in/shloak-rathod-0bb7531b0/"><i class="fa fa-linkedin"></i></a></li>   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </footer>   
+
+
+    <script>
+        $(document).ready(function() {
+            $("form").on("submit", function(event) {
+                var rawText = $("#text").val();
+                var userHtml ='<br>'+'<p class="userText"><span>' + 'You: ' + rawText + "</span></p>";
+                $("#text").val("");
+                $("#chatbox").append(userHtml);
+                // document.getElementById("userInput").scrollIntoView({
+                //     block: "start",
+                //     behavior: "smooth",
+                // });
+                $.ajax({
+                    data: {
+                        msg: rawText,
+                    },
+                    type: "POST",
+                    url: "/get",
+                }).done(function(data) {
+                    var botHtml = '<br>' + '<p class="botText"><span>' + data + "</span></p>";
+                    $("#chatbox").append($.parseHTML(botHtml));
+                    // document.getElementById("userInput").scrollIntoView({
+                    //     block: "start",
+                    //     behavior: "smooth",
+                    // });
+                });
+                event.preventDefault();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
