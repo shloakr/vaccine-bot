@@ -5,8 +5,7 @@ This model uses a rule based chatbot. A rule based chatbot was used as answers s
 
 ### Video Example
 https://drive.google.com/file/d/1BBo2THnYupALUwum8IZz8fU7Knxndh34/view?usp=sharing
-<iframe width="560" height="315" src="https://drive.google.com/file/d/1BBo2THnYupALUwum8IZz8fU7Knxndh34/view" frameborder="0" allowfullscreen></iframe>
-      </iframe>
+
 ### Landing Page
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/70055735/122668168-7750fb80-d1d4-11eb-8679-fbbb3e48caaf.png">
