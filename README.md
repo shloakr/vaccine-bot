@@ -1,1 +1,1 @@
-# vaccine-bot-india
+# vaccine-bot
